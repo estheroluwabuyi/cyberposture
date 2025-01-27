@@ -1,12 +1,12 @@
 import Header from "../components/Header";
 
-function Contact() {
+function Home() {
   return (
     <div>
       <Header />
-      <h2>Contact Page</h2>
+      <h2>Home Page</h2>
     </div>
   );
 }
 
-export default Contact;
+export default Home;
