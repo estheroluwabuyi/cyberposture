@@ -4,13 +4,15 @@ function NavBarLinks() {
   return (
     <ul>
       <li>
-        <Link to="/home">Home</Link>
+        <Link to="/service">Service</Link>
       </li>
+
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/about">About us</Link>
       </li>
+
       <li>
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact">Contact us</Link>
       </li>
     </ul>
   );

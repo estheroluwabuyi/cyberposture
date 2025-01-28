@@ -1,12 +1,12 @@
 // import Header from "../components/Header";
 
-function About() {
+function Schedule() {
   return (
     <div>
       {/* <Header /> */}
-      <h2>About Page</h2>
+      <h2>Schedule Page</h2>
     </div>
   );
 }
 
-export default About;
+export default Schedule;

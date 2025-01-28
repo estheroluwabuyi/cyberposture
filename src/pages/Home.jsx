@@ -1,10 +1,9 @@
-import Header from "../components/Header";
+// import Header from "../components/Header";
 
 function Home() {
   return (
     <div>
-      <Header />
-      <h2>Home Page</h2>
+      <h2 className="home">Home Page</h2>
     </div>
   );
 }

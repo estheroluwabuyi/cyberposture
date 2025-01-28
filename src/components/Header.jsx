@@ -1,12 +1,15 @@
-import NavBarLinks from "./NavBarLinks";
+// import NavBarLinks from "./NavBarLinks";
+// import Home from "../pages/Home";
 
-function Header() {
+import NavBar from "./NavBar";
+
+function Header({ children }) {
   return (
-    <div>
-      <h1 className="header">HEADER REACT</h1>
+    <header className="header">
+      <NavBar />
 
-      <NavBarLinks />
-    </div>
+      {children}
+    </header>
   );
 }
 
