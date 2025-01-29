@@ -1,9 +1,11 @@
 // import Header from "../components/Header";
 
+import NavBar from "../components/NavBar";
+
 function Contact() {
   return (
     <div>
-      {/* <Header /> */}
+      <NavBar />
       <h2>Contact Page</h2>
     </div>
   );

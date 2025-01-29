@@ -1,13 +1,7 @@
-import { Link } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 function ScheduleBtn() {
-  return (
-    <button className="btn btn-primary">
-      <Link to="/schedule" className="btn btn-primary">
-        Schedule
-      </Link>
-    </button>
-  );
+  return <button className="btn btn-primary schedule-btn">Schedule</button>;
 }
 
 export default ScheduleBtn;

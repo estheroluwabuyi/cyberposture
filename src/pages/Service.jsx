@@ -1,9 +1,11 @@
 // import Header from "../components/Header";
 
+import NavBar from "../components/NavBar";
+
 function Service() {
   return (
     <div>
-      {/* <Header /> */}
+      <NavBar />
       <h2>Service Page</h2>
     </div>
   );
