@@ -208,7 +208,7 @@ img {
   position: relative;
   top: 0;
   animation: slide 7s steps(3) infinite;
-  animation-delay: 7s;
+  animation-delay: 5s;
 }
 
 .hero-dynamic-texts li span {
