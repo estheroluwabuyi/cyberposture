@@ -13,7 +13,7 @@
   --text-color: #333;
 
   /* Typography */
-  --font-family-i: "Inter", serif;
+  --font-family-i: "Inter", sans-serif;
   --font-size-base: 1.38rem; /* Default font size */
   --font-size-md: 1.76rem;
   --font-size-btn: 1.41rem;
