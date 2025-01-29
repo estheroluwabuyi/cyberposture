@@ -7,7 +7,9 @@ function NavBar() {
     <section className="nav-bar">
       <Logo />
       <NavBarLinks />
-      <ScheduleBtn />
+      <ScheduleBtn scheduleBtn="scheduleBtn" btnPrimary="btnPrimary">
+        Schedule
+      </ScheduleBtn>
     </section>
   );
 }

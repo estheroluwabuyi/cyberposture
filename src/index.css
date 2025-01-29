@@ -15,6 +15,7 @@
   /* Typography */
   --font-family-i: "Inter", serif;
   --font-size-base: 1.38rem; /* Default font size */
+  --font-size-md: 1.76rem;
   --font-size-btn: 1.41rem;
   --font-size-heading: 2.4rem;
 
@@ -76,10 +77,60 @@ img {
   height: 100%;
 }
 
+/* BUTTONS */
+.btnPrimary {
+  cursor: pointer;
+  font-size: var(--font-size-btn);
+  font-weight: 600;
+  color: var(--primary-font-color);
+  background: var(--btn-gradient);
+  transition: all var(--transition-speed) ease-in-out;
+}
+
+.btnPrimary:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.action-btn {
+  width: 158px;
+  white-space: nowrap;
+  height: 4.61rem;
+  min-width: 10.54rem;
+  border-radius: 2.11rem;
+  padding: 1.41rem 2.75rem;
+}
+
+.scheduleBtn {
+  width: 16rem;
+  height: 3.16rem;
+  min-width: 10.54rem;
+  padding: 0.83rem 2.75rem 0.92rem 2.75rem;
+  border-radius: 1.58rem;
+}
+
+.special-btn {
+  background: transparent;
+  border: 2px solid #09c6de;
+}
+
+.special-btn:hover {
+  background: var(--btn-gradient);
+  border: none;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 2.1rem;
+  margin-top: 2rem;
+}
+
 /* Header */
 .header {
   position: relative;
-  background: linear-gradient(180deg, #12132b, #0f111a);
+  background: radial-gradient(ellipse at center, #12d5f54d, #12d5f500 80%),
+    radial-gradient(ellipse at top left, #12132b, #0f111a);
+
   width: 100%;
   color: white;
   height: 100vh;
@@ -121,28 +172,59 @@ img {
 
 .nav-bar-logo {
   width: clamp(12rem, 16vw, 16.95rem);
-  height: auto;
-  /* height: 1.76rem; */
+  /* height: auto; */
+  height: 1.76rem;
 }
 
-.btn-primary {
-  cursor: pointer;
-  font-size: var(--font-size-btn);
-  font-weight: 600;
+/* HERO */
+.hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-heading {
+  font-weight: 300;
+  /* font-size: 4.9rem; */
+  font-size: 4.3rem;
+  color: #e5e5e5;
+}
+
+.hero-dynamic-texts {
+  height: 255px;
+  line-height: 255px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-dynamic-texts li {
+  list-style: none;
   color: var(--primary-font-color);
-  background: var(--btn-gradient);
-  transition: all var(--transition-speed) ease-in-out;
+  font-size: 21.1rem;
+  font-weight: 800;
+  position: relative;
+  top: 0;
+  animation: slide 7s steps(3) infinite;
 }
 
-.btn-primary:hover {
-  transform: scale(1.05);
-  opacity: 0.9;
+.hero-dynamic-texts li span {
+  line-height: 255px;
 }
 
-.schedule-btn {
-  width: 16rem;
-  height: 3.16rem;
-  min-width: 10.54rem;
-  padding: 0.83rem 2.75rem 0.92rem 2.75rem;
-  border-radius: 1.58rem;
+.hero-texts {
+  font-size: var(--font-size-md);
+  width: 45.7rem;
+  text-align: center;
+  line-height: 2.8rem;
+}
+
+/* KEYFRAMES */
+@keyframes slide {
+  100% {
+    top: -765px;
+  }
 }

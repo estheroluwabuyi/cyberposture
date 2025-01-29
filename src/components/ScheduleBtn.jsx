@@ -1,7 +1,11 @@
 // import { NavLink } from "react-router-dom";
 
-function ScheduleBtn() {
-  return <button className="btn btn-primary schedule-btn">Schedule</button>;
+function ScheduleBtn({ children, btnPrimary, scheduleBtn, className }) {
+  return (
+    <button className={`${btnPrimary} ${scheduleBtn} ${className} `}>
+      {children}
+    </button>
+  );
 }
 
 export default ScheduleBtn;
