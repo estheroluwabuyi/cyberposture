@@ -189,7 +189,6 @@ img {
 
 .hero-heading {
   font-weight: 300;
-  /* font-size: 4.9rem; */
   font-size: 4.3rem;
   color: #e5e5e5;
 }
@@ -209,6 +208,7 @@ img {
   position: relative;
   top: 0;
   animation: slide 7s steps(3) infinite;
+  animation-delay: 7s;
 }
 
 .hero-dynamic-texts li span {
@@ -221,6 +221,10 @@ img {
   text-align: center;
   line-height: 2.8rem;
 }
+
+/* MAIN */
+
+/* MEDIA QUERIES */
 
 /* KEYFRAMES */
 @keyframes slide {
