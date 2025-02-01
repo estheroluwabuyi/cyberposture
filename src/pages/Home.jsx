@@ -18,6 +18,9 @@ function Home() {
           <li>
             <span>Secured.</span>
           </li>
+          <li>
+            <span>Complaint.</span>
+          </li>
         </ul>
 
         <p className="hero-texts">
