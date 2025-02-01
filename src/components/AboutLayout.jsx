@@ -1,3 +1,4 @@
+import { useState } from "react";
 import CustomizedHeading from "./CustomizedHeading";
 import SectionHeading from "./SectionHeading";
 
@@ -37,16 +38,32 @@ const aboutCards = [
 ];
 
 function AboutLayout() {
+  const [activeId, setActiveId] = useState(null);
+
   return (
     <div className="about">
       <SectionHeading>How we work</SectionHeading>
-      <CustomizedHeading />
+      <CustomizedHeading>
+        <div>We ensure your organization is protected</div> against evolving
+        threats and meets all regulatory requirements.
+      </CustomizedHeading>
 
       <section className="about-container">
         {aboutCards.map((card, index) => (
           <div key={index} className="about-card">
-            <div className="about-card-img">
-              <img src={card.src} alt={card.alt} width="200" height="200" />
+            <div
+              className="about-card-img"
+              onMouseEnter={() => setActiveId(i.id)}
+              onMouseLeave={() => setActiveId(null)}
+              onTouchStart={() => setActiveId(i.id)}
+            >
+              <img
+                src={card.src}
+                alt={card.alt}
+                width="200"
+                height="200"
+                className={activeId === i.id ? "about-card-active" : ""}
+              />
             </div>
 
             <div className="about-card-mainTexts">

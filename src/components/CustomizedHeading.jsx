@@ -1,10 +1,5 @@
-function CustomizedHeading() {
-  return (
-    <h1 className="custom-heading">
-      <div>We ensure your organization is protected</div> against evolving
-      threats and meets all regulatory requirements.
-    </h1>
-  );
+function CustomizedHeading({ children }) {
+  return <h1 className="custom-heading">{children}</h1>;
 }
 
 export default CustomizedHeading;
