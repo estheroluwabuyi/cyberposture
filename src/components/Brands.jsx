@@ -2,32 +2,32 @@ import SectionHeading from "./SectionHeading";
 
 const brands = [
   {
-    src: "public/Cyberation-Logo.png",
+    src: "./Cyberation-Logo.png",
     alt: "cyberation logo",
     class: "img-1",
   },
   {
-    src: "public/Esusu-Logo.png",
+    src: "./Esusu-Logo.png",
     alt: "esusu logo",
     class: "img-2",
   },
   {
-    src: "public/Cellulant-Logo.png",
+    src: "./Cellulant-Logo.png",
     alt: "cellulant logo",
     class: "img-3",
   },
   {
-    src: "public/Digiss-Logo.png",
+    src: "./Digiss-Logo.png",
     alt: "Digiss logo",
     class: "img-4",
   },
   {
-    src: "public/Cyberation-Logo.png",
+    src: "./Cyberation-Logo.png",
     alt: "cyberation logo",
     class: "img-1",
   },
   {
-    src: "public/Cyberation-Logo.png",
+    src: "./Cyberation-Logo.png",
     alt: "cyberation logo",
     class: "img-1",
   },
