@@ -1,3 +1,4 @@
+import CustomizedHeading from "./CustomizedHeading";
 import SectionHeading from "./SectionHeading";
 
 const aboutCards = [
@@ -39,6 +40,7 @@ function AboutLayout() {
   return (
     <div className="about">
       <SectionHeading>How we work</SectionHeading>
+      <CustomizedHeading />
 
       <section className="about-container">
         {aboutCards.map((card, index) => (
