@@ -37,6 +37,7 @@ function Brands() {
   return (
     <section className="brands">
       <SectionHeading>Organizations that trust us</SectionHeading>
+
       <div className="brands-container">
         {brands.map((brand, index) => (
           <div key={index} className={brand.c}>

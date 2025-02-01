@@ -1,3 +1,4 @@
+import AboutLayout from "./AboutLayout";
 import Brands from "./Brands";
 import SectorOverview from "./SectorOverview";
 
@@ -6,6 +7,7 @@ function Main() {
     <div className="main">
       <SectorOverview />
       <Brands />
+      <AboutLayout />
     </div>
   );
 }

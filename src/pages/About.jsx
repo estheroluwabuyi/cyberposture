@@ -1,43 +1,11 @@
-const brands = [
-  {
-    src: "public/Cyberation-Logo.png",
-    alt: "cyberation logo",
-    class: "img-1",
-  },
-  {
-    src: "public/Esusu-Logo.png",
-    alt: "esusu logo",
-    class: "img-2",
-  },
-  {
-    src: "public/Cellulant-Logo.png",
-    alt: "cellulant logo",
-    class: "img-3",
-  },
-  {
-    src: "public/Digiss-Logo.png",
-    alt: "Digiss logo",
-    class: "img-4",
-  },
-  {
-    src: "public/Cyberation-Logo.png",
-    alt: "cyberation logo",
-    class: "img-1",
-  },
-  {
-    src: "public/Cyberation-Logo.png",
-    alt: "cyberation logo",
-    class: "img-1",
-  },
-];
-
 import NavBar from "../components/NavBar";
+import AboutLayout from "../components/AboutLayout";
 
 function About() {
   return (
-    <div>
+    <div className="about about-page">
       <NavBar />
-      <h2>About Page</h2>
+      <AboutLayout />
     </div>
   );
 }
