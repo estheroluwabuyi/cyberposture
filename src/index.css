@@ -9,9 +9,11 @@
   /* Colors */
   --primary-font-color: #fff;
   --secondary-color: #09c6de;
+  --section-heading: #7dbdf8;
   --background-color: #f5f5f5;
   --purple-color: #460389;
   --text-color: #333;
+  --border-color: #dadada80;
 
   /* Typography */
   --font-family-i: "Inter", serif;
@@ -114,7 +116,7 @@ img {
 
 .special-btn {
   background: transparent;
-  border: 2px solid #09c6de;
+  border: 2px solid var(--secondary-color);
 }
 
 .special-btn:hover {
@@ -240,14 +242,11 @@ img {
 .sectionHeading {
   font-size: var(--font-size-btn);
   letter-spacing: 1.76px;
-  color: #7dbdf8;
+  color: var(--section-heading);
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 0.9px;
   padding-top: 10rem;
-}
-
-.sector-overview {
 }
 
 .sector-overview-list {
@@ -285,6 +284,63 @@ img {
   height: 46px;
   border-radius: 50%;
   background: var(--linear-gradient);
+}
+
+.brands {
+  color: white;
+}
+
+.brands-container {
+  position: relative;
+  border: 1px solid var(--border-color);
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  width: 90%;
+  margin: 4rem auto;
+}
+
+.brands-container div {
+  display: grid;
+  place-content: center;
+  height: 100%;
+}
+
+.brands-container div {
+  position: relative;
+  padding: 0 3.2rem;
+  /* transition: transform var(--transition-speed) linear; */
+}
+
+/* .brands-container div:hover {
+  transform: scale(1.05);
+} */
+
+.brands-container div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: var(--border-color);
+  height: 100%;
+  width: 0.15rem;
+}
+
+.img-1 img {
+  width: 106.39px;
+  height: 90.33px;
+}
+.img-2 img {
+  width: 196.37px;
+  height: 57.19px;
+}
+.img-3 img {
+  width: 196.46px;
+  height: 46.57px;
+}
+.img-4 img {
+  width: 153.62px;
+  height: 49.71px;
 }
 
 @keyframes scrolling {
