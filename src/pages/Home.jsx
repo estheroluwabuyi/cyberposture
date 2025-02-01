@@ -8,7 +8,7 @@ function Home() {
       <div className="hero">
         <h2 className="hero-heading">LET’S HELP YOU STAY</h2>
 
-        <ul class="hero-dynamic-texts">
+        <ul className="hero-dynamic-texts">
           <li>
             <span>Complaint.</span>
           </li>
