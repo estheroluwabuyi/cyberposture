@@ -50,19 +50,19 @@ function AboutLayout() {
 
       <section className="about-container">
         {aboutCards.map((card, index) => (
-          <div key={index} className="about-card">
+          <div key={index} className="about-card"               onMouseEnter={() => setActiveId(index.id)}
+              onMouseLeave={() => setActiveId(null)}
+              onTouchStart={() => setActiveId(index.id)}>
             <div
               className="about-card-img"
-              onMouseEnter={() => setActiveId(i.id)}
-              onMouseLeave={() => setActiveId(null)}
-              onTouchStart={() => setActiveId(i.id)}
+
             >
               <img
                 src={card.src}
                 alt={card.alt}
                 width="200"
                 height="200"
-                className={activeId === i.id ? "about-card-active" : ""}
+                className={activeId === index.id ? "about-card-active" : ""}
               />
             </div>
 
